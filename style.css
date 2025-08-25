@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ecfeff, #dbeafe);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.styled-video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  background-color: #000;
+  pointer-events: none; /* This disables user interaction */
+}
+.video-caption {
+  color: #64748b;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+
+/* About & Contact Section */
+.about, .contact {
+  padding: 3rem 1rem;
+}
+
+.about h2, .contact h2 {
+  font-size: 1.75rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.about p, .contact p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #60a5fa;
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .video-container {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about h2, .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p, .contact p {
+    font-size: 0.95rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+}
